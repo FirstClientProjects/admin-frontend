@@ -1,0 +1,14 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.lable {
+    font-family: $ibm-font;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: $black;
+    width: 100%;
+}

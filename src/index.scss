@@ -1,0 +1,8 @@
+@import './styles/mixins/mixins';
+* {
+  @include resetLayout();
+}
+
+// .test {
+//   @include test();
+// }

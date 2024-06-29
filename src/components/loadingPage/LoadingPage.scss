@@ -1,0 +1,17 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.loading-page {
+    position: absolute;
+    background-color:$white;
+    @include createDefaultContainer(100%, 100vh);
+    @include flexContainer(center, center);
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

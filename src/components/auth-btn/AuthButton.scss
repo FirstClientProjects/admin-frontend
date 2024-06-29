@@ -1,0 +1,23 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.auth-btn {
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    padding: 13px 20px;
+    font-family: $ibm-font;
+    border-radius: $border-radius;
+    border: none;
+    font-weight: 500;
+    font-style: 15px;
+
+    &:focus {
+        outline: none;
+    }
+}

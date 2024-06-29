@@ -1,0 +1,70 @@
+////////////////
+//default styles
+////////////////
+@mixin resetLayout() {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+////////////////
+@mixin test() {
+    border: 1px solid red;
+}
+@mixin createDefaultContainer($width, $min-height) {
+    width: $width;
+    min-height: $min-height;
+}
+@mixin centerInnerContainer($max-width, $min-height) {
+    max-width: $max-width;
+    min-height: $min-height;
+    margin: 0 auto
+}
+
+/////////////////
+//flex box styles
+/////////////////
+@mixin flexContainer($align-items, $justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+@mixin centerElement() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexColumn() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/////////////
+//grid styles
+/////////////
+@mixin gridContainer($columnCount, $rowsCount) {
+    display: grid;
+    grid-template-columns: repeat($columnCount, 1fr);
+    grid-template-rows: repeat($rowsCount, 1fr);
+}
+@mixin alignGridPosition($grid-column, $grid-row) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+}
+
+///////////////
+//border styles
+///////////////
+@mixin createBorder($size, $style, $color) {
+    border: $size $style $color;
+}
+////////
+//images
+////////
+@mixin adjustImage() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

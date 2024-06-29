@@ -1,0 +1,25 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.text-field {
+    width: 100%;
+    padding: 13px 20px;
+    color: $light-gray;
+    background-color: $lighter-gray;
+    font-family: $ibm-font;
+    border-radius: $border-radius;
+    border: none;
+    font-weight: 500;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $light-gray;
+        font-family: $ibm-font;
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.not-found {
+    @include createDefaultContainer(100%, 100vh);
+    @include flexContainer(center, center);
+
+    .anim {
+        width: 400px;
+    }
+}
