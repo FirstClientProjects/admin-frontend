@@ -51,7 +51,7 @@ const ChangePassword = () => {
                 </div>
               </Section>
               <Section marginBottom='50px'>
-                <AuthButton title='Send reset link' onClick={() => {}}/>
+                <AuthButton title='Change Password' onClick={() => {}}/>
               </Section>
             </div>
 
