@@ -2,7 +2,7 @@ import React from 'react';
 import './AuthParagraph.scss';
 
 type Props = {
-    paragraph: string
+    paragraph: number | string
 }
 
 const AuthParagraph = (props: Props) => {
