@@ -1,7 +1,7 @@
 // authHelpers.ts
 import axios from 'axios';
 import { NavigateFunction } from 'react-router-dom';
-import baseURL from '../baseURL';
+import { adminServiceBaseURL } from '../baseURL';
 
 interface HandleSubmitProps {
   email: string;
@@ -35,7 +35,7 @@ export const handleLogin = async ({
     return;
   } else {
     console.log(`Loading : ${setLoading}`);
-    await axios.post(`${baseURL}/admin/login`, {
+    await axios.post(`${adminServiceBaseURL}/admin/login`, {
       email: email,
       password: password
     })
