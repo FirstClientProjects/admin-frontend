@@ -15,7 +15,7 @@ const Navigation = () => {
         <Route path='/' Component={Landing}/>
         <Route path='/login' Component={Login}/>
         <Route path='/forgot-password' Component={ForgotPassword}/>
-        <Route path='/change-password' Component={ChangePassword}/>
+        <Route path='/change-password/:userEmail' Component={ChangePassword}/>
         <Route path='/dashboard' Component={Dashboard}/>
         <Route path='*' Component={NotFound}/>
       </Routes>

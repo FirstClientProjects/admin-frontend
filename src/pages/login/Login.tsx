@@ -13,7 +13,6 @@ import TextField from '../../components/textfield/TextField';
 import AuthButton from '../../components/auth-btn/AuthButton';
 import axios from 'axios';
 import Alert from '../../components/alert/Alert';
-import baseURL from '../../api/baseURL';
 import { handleLogin } from '../../api/admin-service/admin-login-service';
 
 const Login = () => {
@@ -51,48 +50,6 @@ const Login = () => {
       navigate
     });
   };
-
-  // const handleSubmit = async () => {
-  //   if (email.trim().length === 0 || password.trim().length === 0) {
-  //     console.log('Please enter details');
-  //     setError(true);
-  //     setMessage('Please enter all the details');
-  //     setStatusCode(400);
-  //     setTimeout(() => {
-  //       setError(false);
-  //     }, 5000);
-  //   }else {
-  //     console.log(`Loading : ${loading}`);
-  //     await axios.post(`${baseURL}/admin/login`, {
-  //       email: email,
-  //       password: password
-  //     })
-  //       .then((response) => {
-  //         console.log(response.data.data);
-  //         resetCredentials();
-  //         setLoading(true);
-          
-  //         if(response.status === 200) {
-  //           setMessage(`Login successful. ${response.data.message}`);
-  //           setStatusCode(200);
-  //           setTimeout(() => {
-  //             setLoading(false);
-  //             navigate('/dashboard');
-  //           }, 5000);
-  //         }
-  //       })
-  //       .catch((error) => {
-  //         console.log(error.response.data);
-  //         setError(true);
-  //         setMessage(`Please retry. ${error.response.data.data}`);
-  //         setStatusCode(400);
-  //         setTimeout(() => {
-  //           setError(false);
-  //         }, 5000);
-  //       })
-  //   }
-  //   console.log(email, password);
-  // };
 
   return (
     <div className='test login'>
