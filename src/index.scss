@@ -3,6 +3,10 @@
   @include resetLayout();
 }
 
+body {
+  overflow: hidden;
+}
+
 // .test {
 //   @include test();
 // }

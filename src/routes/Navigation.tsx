@@ -12,6 +12,8 @@ import DeveloperManagement from '../pages/developer-management/DeveloperManageme
 import ClientManagement from '../pages/client-management/ClientManagement';
 import Analytics from '../pages/analytics/Analytics';
 import Profile from '../pages/profile/Profile';
+import Help from '../pages/help/Help';
+import Settings from '../pages/settings/Settings';
 
 const Navigation = () => {
     
@@ -25,6 +27,8 @@ const Navigation = () => {
         <Route path='/dashboard/*' Component={Dashboard}>
           <Route path='analytics' Component={Analytics}/>
           <Route path='profile' Component={Profile}/>
+          <Route path='help' Component={Help}/>
+          <Route path='settings' Component={Settings}/>
           <Route path='client-management' Component={ClientManagement}/>
           <Route path='developer-management' Component={DeveloperManagement}/>
           <Route path='project-management' Component={ProjectManagement}/>

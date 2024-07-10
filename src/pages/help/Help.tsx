@@ -1,17 +1,17 @@
 import React from 'react';
-import './Profile.scss';
+import './Help.scss';
 import HeaderTitle from '../../components/header-title/HeaderTitle';
 
-const Profile = () => {
+const Help = () => {
 
   return (
     <div>
 
-      <HeaderTitle title='Profile'/>
+      <HeaderTitle title='Help'/>
 
     </div>
   );
 
 }
 
-export default Profile;
+export default Help;

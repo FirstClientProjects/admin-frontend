@@ -1,0 +1,9 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.title {
+    font-family: $ibm-font;
+}
