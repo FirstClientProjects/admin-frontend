@@ -36,6 +36,16 @@ const Analytics = () => {
       count: 2342,
       image: megaphone,
     },
+    {
+      title: 'Organizations',
+      count: 2342,
+      image: megaphone,
+    },
+    {
+      title: 'Organizations',
+      count: 2342,
+      image: megaphone,
+    },
   ]);
 
   return (
