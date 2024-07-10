@@ -1,0 +1,21 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.analytics {
+    width: 100%;
+    min-height: 90vh;
+    padding-bottom: 30px;
+    padding-right: 30px;
+
+    .analytics-content {
+        min-height: 90vh;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        overflow-x: hidden;
+    }
+}

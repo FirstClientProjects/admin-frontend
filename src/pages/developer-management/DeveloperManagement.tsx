@@ -1,10 +1,15 @@
 import React from 'react';
 import './DeveloperManagement.scss';
+import HeaderTitle from '../../components/header-title/HeaderTitle';
 
 const DeveloperManagement = () => {
 
   return (
-    <div>DeveloperManagement</div>
+    <div>
+
+      <HeaderTitle title='Developers Management'/>
+
+    </div>
   );
 
 }

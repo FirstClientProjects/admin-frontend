@@ -1,0 +1,38 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.dashboard-card {
+    background-color: #f0f2f6;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s ease; 
+    width: 100%;
+    padding: 5% 10%;
+    overflow: hidden; //to make icon back
+
+    &:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .card-title {
+        font-family: $roboto-font;
+    }
+
+    .card-count {
+        font-family: $ibm-font;
+    }
+
+    .card-image {
+        width: 300px;
+        position: absolute;
+        right: -50px;
+        bottom: -50px;
+        z-index: 0;
+    }
+}
