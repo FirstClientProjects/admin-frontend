@@ -1,0 +1,32 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.dashboard {
+    @include createDefaultContainer(100%, 100vh);
+    // background-color: red;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+    .left-dashboard {
+        background-color: greenyellow;
+    }
+    
+    .right-dashboard {
+        // background-color: green;
+        display: grid;
+        grid-template-rows: 10% 90%;
+
+        .header-dashboard {
+            // background-color: rebeccapurple;
+        }
+
+        .content-dashboard {
+            // background-color: aqua;
+        }
+    }
+
+}

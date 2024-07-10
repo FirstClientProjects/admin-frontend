@@ -49,7 +49,7 @@ export const handleLogin = async ({
           setStatusCode(200);
           setTimeout(() => {
             setLoading(false);
-            navigate('/dashboard');
+            navigate('/dashboard/analytics');
           }, 5000);
         }
       })
