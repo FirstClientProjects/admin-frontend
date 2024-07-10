@@ -1,0 +1,62 @@
+@import '../../styles/breakpoints/breakpoints';
+@import '../../styles/colors/colors';
+@import '../../styles/fonts/fonts';
+@import '../../styles/mixins/mixins';
+@import '../../styles/spacing/spacing';
+
+.left-bar {
+    @include createDefaultContainer(100%, 100vh);
+    background-color: #f0f2f6;
+    border-right: 1.5px solid #dbdbdb;
+    position: relative;
+    
+    .logo {
+        width: 130px;
+        padding: 10% 5%;
+    }
+
+    .hr {
+        width: 100%;
+        border: 1px solid #e1e1e1;
+    }
+
+    .nav-section {
+        padding: 10% 5%;
+
+        .list-header {
+            margin-bottom: 10%;
+            font-family: $roboto-font;
+        }
+
+        .nav-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+
+            .nav-icon {
+                width: 20px;
+            }
+
+            .nav-name {
+                color: $black;
+                font-family: $ibm-font;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    .logout {
+        padding: 10% 5% 0% 5%;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+    }
+}
+
+.active {
+    background-color: red;
+}
